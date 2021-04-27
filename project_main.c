@@ -8,16 +8,20 @@
  * @copyright Copyright (c) 2021
  * 
  */
+#include <avr/io.h>
+#include <util/delay.h>
+#include <ADC_activity.h>
+#include <LED_activity.h>
 
 int main()
 {
 	uint16_t temp = 0;
-	int LED = 0; 
-	LED = LED_state();
+	int LED = 0;
 	InitADC();
     
     while(1)
-    if(LED == 0)
+	LED = LED_state();
+    if(LED == 1)
     {
         temp = Read_ADC(0);
         _delay_ms(200);

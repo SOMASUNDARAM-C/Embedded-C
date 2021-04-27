@@ -30,7 +30,6 @@ int LED_state(void)
         {
             PORTB |= (1 << PB1);
             LED = 1;
-            continue;
         }
         else
         {
@@ -38,8 +37,6 @@ int LED_state(void)
             LED = 0;
         }
     }
-
-
     return LED;
 }
 
