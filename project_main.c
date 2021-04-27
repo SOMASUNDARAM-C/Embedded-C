@@ -17,7 +17,10 @@ int main()
 	InitADC();
     
     while(1)
-    temp = Read_ADC(0);
-    _delay_ms(200);
+    if(LED == 0)
+    {
+        temp = Read_ADC(0);
+        _delay_ms(200);
+    }
     return 0;
 }
