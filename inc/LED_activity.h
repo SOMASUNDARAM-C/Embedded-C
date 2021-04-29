@@ -2,12 +2,15 @@
 #define __LED_ACTIVITY_H__
 
 /**
- * @brief Initialize ports for input and output
+ * @brief Initialize ports for input switches and output LED
  * 
  */
-void ports(void);
+void ports_init(void);
 
-int LED_state(void);
+///Variable to indicate the seat occupancy
+volatile unsigned SEAT_OCCUPANCY;  
 
+///Variable to indicate the switch state
+volatile unsigned SWITCH_STATE;
 
 #endif
