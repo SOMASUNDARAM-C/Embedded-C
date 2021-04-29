@@ -1,7 +1,12 @@
 # Seat Temperature Controller
 ## Simulation Output
-![off](simulation/LED-off.png)|![PWM1](simulation/PWM1.png)|![PWM2](simulation/PWM2.png)|
-### CI and Code Quality
+### LED and PWM output off
+![off](simulation/LED-off.png)
+### LED on and PWM at 40% dutycycle
+![PWM1](simulation/PWM1.png)
+### LED on and PWM at 95% dutycycle
+![PWM2](simulation/PWM2.png)
+## CI and Code Quality
 
 |Build|Cppcheck|
 |:------:|:-----:|
