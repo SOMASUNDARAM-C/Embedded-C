@@ -2,7 +2,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #define BAUD 9600
-#define BAUDRATE ((F_CPU)/(BAUD*16UL)-1)  ///<Baudrate calculation
+#define BAUDRATE ((F_CPU)/(BAUD*16UL)-1)  ///Baudrate calculation
 
 void USARTInit(void)
 {

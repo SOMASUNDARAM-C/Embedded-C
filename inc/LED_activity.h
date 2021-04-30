@@ -7,10 +7,10 @@
  */
 void ports_init(void);
 
-///Variable to indicate the seat occupancy
-volatile unsigned SEAT_OCCUPANCY;  
 
-///Variable to indicate the switch state
-volatile unsigned SWITCH_STATE;
+volatile unsigned SEAT_OCCUPANCY;  ///Variable to indicate the seat occupancy
+
+
+volatile unsigned SWITCH_STATE;   ///Variable to indicate the switch state
 
 #endif

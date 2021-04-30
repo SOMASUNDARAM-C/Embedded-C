@@ -1,6 +1,6 @@
 /**
  * @file project_main.c
- * @author Somasundaram.C ()
+ * @author Somasundaram.C 
  * @brief Project to control the seat temperature in an automobile
  * @version 0.1
  * @date 2021-04-29
@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#define F_CPU 16000000UL   ///<Processor speed of 16MHz
+#define F_CPU 16000000UL   ///Processor speed of 16MHz
 #include <avr/io.h>
 #include <util/delay.h>
 #include "ADC_activity.h"
@@ -41,13 +41,13 @@ int main()
 
         if(LED == 1)
         {
-            temp = PWM_output(Read_ADC(0));  ///<Read ADC input and generate appropriate PWM output
-            USARTWriteChar(temp);  ///<Write temperature value to serial monitor
+            temp = PWM_output(Read_ADC(0));  ///Read ADC input and generate appropriate PWM output
+            USARTWriteChar(temp);  ///Write temperature value to serial monitor
             _delay_ms(200);
         }
         else
         {
-            PWM_output(2000);   ///<Function call to produce 0 PWM output
+            PWM_output(2000);   ///Function call to produce 0 PWM output
         }
     }
     return 0;
