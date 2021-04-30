@@ -17,13 +17,13 @@ void USARTInit(void)
     UCSR0B = (1 << RXEN0) | (1 << TXEN0) | (1 << RXCIE0) | (1 << TXCIE0);
 }
 
-char USARTReadChar(void)
+/*char USARTReadChar(void)
 {
     ///Wait to receive data
     while(!(UCSR0A & (1 << RXC0)));
 
     return UDR0;
-}
+}*/
 
 void USARTWriteChar(char data)
 {

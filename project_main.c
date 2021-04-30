@@ -23,6 +23,7 @@ int main()
 
     ///Calling initializing functions
 	InitADC();
+    USARTInit();
     ports_init();
     
     while(1)
